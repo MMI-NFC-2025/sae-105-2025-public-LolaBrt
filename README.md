@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : BROUART
+- PRÉNOM : LOLA
+- GROUPE : C1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/CsN83f1b9o9sKlCP1E3XrU/Chrorus-Symphonia?node-id=2-4&t=gcnXEYcAKMqrSNcr-1
 
 ## Sujet
 

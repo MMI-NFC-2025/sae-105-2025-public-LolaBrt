@@ -1,0 +1,24 @@
+/* colors */
+:root {
+
+/* color */
+    --dark: #523e5c;
+    --light-v: #d9c6e2;
+    --v-dark: #15101c;
+    --vi: #8e4de4;
+    --yellow: #fff674;
+
+
+/* typo */
+    --font-sans: "Mohave", sans-serif;
+
+/* font-size */
+    --size-details: 
+
+/* space */
+    --spc-s: 0.5rem;
+    --spc-margin: 2.1875rem;
+    --space-sm: 5rem;
+    --spc-mid: 7.25rem;
+    --spc-lg: 12.5rem;
+}
