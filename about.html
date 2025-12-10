@@ -19,7 +19,7 @@
         <title>À propos</title>
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <a class="header__link" href="/">
             <img class="header__logo" src="/assets/icons/logoblanc-021.svg" alt="Logo du site Chorus Symphony" />
         </a>
@@ -47,7 +47,18 @@
             </nav>
     </header>
 
-
+    <section class="wrapper">
+        <h2 class="wrapper__title">Chorus Symphonia: l’écho classique au cœur de la Citadelle</h2>
+        <p class="wrapper__intro">
+            Chorus Symphonia est bien plus qu'un festival de musique classique et lyrique ; c'est une expérience culturelle
+            immersive qui fait vibrer le patrimoine exceptionnel
+            de la Franche Comté.
+            Inspiré par la grandeur des Chorégies d'Orange, notre festival adapte cette tradition millénaire à l'ère
+            moderne, en
+            l'ancrant dans le cadre majestueux de la Citadelle de Besançon.
+        </p>
+        <img class="wrapper__img" src="/assets/img/prog/p" alt="photo de la citadelle de Besançon" loading="lazy" />
+    </section>
 
     <footer class="footer">
         <nav class="footer__nav">
@@ -56,13 +67,13 @@
                     <a class="footer__link" href="/programme.html">Programme</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="/artistes.html">Artistes</a>
-                </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/scenes.html">Scènes</a>
-                </li>
-                <li class="footer__item">
                     <a class="footer__link" href="/infos.html">Informations pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/about.html">À propos</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__link" href="/contact.html">Contact</a>
                 </li>
             </ul>
             <ul class="u-list-unstyled footer__list">
@@ -86,5 +97,9 @@
             <a href="https://mmi.univ-fcomte.fr/">département MMi de Montbéliard</a>.
         </p>
     </footer>
+
+    <a href="#header" class="ancre">
+        <img src="/assets/icons/ancre.svg" alt="Retour en haut" width="24" height="auto">
+    </a>
 </body>
 </html>
