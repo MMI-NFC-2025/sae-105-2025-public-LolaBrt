@@ -13,7 +13,9 @@
     --font-sans: "Mohave", sans-serif;
 
 /* font-size */
-    --size-details: 
+    --font-size-md: 1.25rem;
+    --font-size-h2: 2rem;
+    --font-size-h1: 4rem;
 
 /* space */
     --spc-s: 0.5rem;
