@@ -7,10 +7,11 @@
 @import "base/media.css";
 
 @import "layout/section.css";
+@import "layout/header.css";
+@import "layout/footer.css";
 
 /*composants*/
 @import "components/carousel.css";
-@import "components/header.css";
-@import "components/footer.css";
 @import "components/home-hero.css";
 @import "components/ancre.css";
+@import "components/menu.css";

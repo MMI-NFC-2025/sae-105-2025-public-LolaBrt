@@ -1,16 +1,11 @@
 /* ancre toujours visible en bas à droite */
 .ancre {
     position: fixed;
-    /* colle à l'écran */
-    bottom: var(--spc-margin, 1.25rem);
-    /* utilise ta variable si présente */
-    right: var(--spc-margin, 1.25rem);
-    z-index: 10000;
-    /* au-dessus de tout */
+    bottom: var(--spc-margin);
+    right: var(--spc-margin);
     display: inline-block;
     background: none;
-    /* optionnel : couleur de fond */
-    padding: 0.5rem;
+    padding: var(--spc-s);
     border-radius: 999px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
     transition: transform .18s ease, opacity .18s ease;
@@ -18,17 +13,13 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-/* style de l'image à l'intérieur */
 .ancre img {
     display: block;
     width: 24px;
-    /* taille souhaitée */
     height: auto;
     pointer-events: none;
-    /* évite doublons d'événements sur l'image */
 }
 
-/* état hover / focus accessible */
 .ancre:focus,
 .ancre:hover {
     transform: translateY(-3px);

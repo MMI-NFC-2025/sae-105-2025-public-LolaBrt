@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header__link {
+    flex-shrink: 0;
+}
+
+.header__logo {
+    height: 70px;
+    width: auto;
+}
+
+.menu-btn {
+    position: relative;
+    width: 35px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.menu-btn__bar {
+    background-color: var(--light-v);
+    height: 2px;
+    width: 35px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-btn__bar--top {
+    top: 0;
+}
+
+.menu-btn__bar--mid {
+    top: 11px;
+}
+
+.menu-btn__bar--bottom {
+    bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 1rem 35px;
+    }
+}
