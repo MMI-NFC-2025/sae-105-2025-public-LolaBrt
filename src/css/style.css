@@ -9,3 +9,5 @@
 @import "layout/footer.css";
 
 /*composants*/
+@import "composents/carousel.css";
+@import "composents/filtre.css";
