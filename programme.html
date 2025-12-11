@@ -17,11 +17,7 @@
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
-
-    <style>
-        
-    </style>
-
+    <script type="module" src="/src/js/filtre.js"></script>
 </head>
 
 <body>
@@ -93,80 +89,104 @@
                 des moments de partage et de découverte.
             </p>
 
-            <div class="event-section" data-date="jeudi" data-scenes="decouverte principale recital">
-                <h3 class="wrapper__prog--subtitle">Jeudi 28 août 2026 : Soirée d'ouverture</h3>
+            <!-- Jeudi 18h00 - Espace découverte -->
+            <div class="event-section" data-date="jeudi" data-scene="decouverte">
+                <h3 class="wrapper__prog--subtitle">Jeudi 28 août 2026 - 18h00 : Espace découverte</h3>
                 <p class="wrapper__prog">
-                    18h00 : Espace découverte
-
                     Atelier participatif : initiation au chant lyrique
+                </p>
+            </div>
 
-                    20h00 : Scène principale
-
+            <!-- Jeudi 20h00 - Scène principale -->
+            <div class="event-section" data-date="jeudi" data-scene="principale">
+                <h3 class="wrapper__prog--subtitle">Jeudi 28 août 2026 - 20h00 : Scène principale</h3>
+                <p class="wrapper__prog">
                     Grand concert d'ouverture : Guillaume Connesson, compositeur
-
-                    22h30 Scène récital
-
-                    Récital de piano:
-                    VK, pianiste
                 </p>
                 <img class="wrapper__img" src="/assets/img/prog/prog-jeudi.webp" alt="homme jouant du piano"
                     loading="lazy" />
             </div>
 
-            <div class="event-section" data-date="vendredi" data-scenes="decouverte recital principale">
-                <h3 class="wrapper__prog--subtitle">Vendredi 29 août 2026 : Soirée thématique</h3>
+            <!-- Jeudi 22h30 - Scène récital -->
+            <div class="event-section" data-date="jeudi" data-scene="recital">
+                <h3 class="wrapper__prog--subtitle">Jeudi 28 août 2026 - 22h30 : Scène récital</h3>
                 <p class="wrapper__prog">
-                    15h00 : Espace découverte
+                    Récital de piano : VK, pianiste
+                </p>
+            </div>
 
+            <!-- Vendredi 15h00 - Espace découverte -->
+            <div class="event-section" data-date="vendredi" data-scene="decouverte">
+                <h3 class="wrapper__prog--subtitle">Vendredi 29 août 2026 - 15h00 : Espace découverte</h3>
+                <p class="wrapper__prog">
                     Théâtre Citoyen : Représentation et Échanges
+                </p>
+            </div>
 
-                    17h00 : Scène récital
-
+            <!-- Vendredi 17h00 - Scène récital -->
+            <div class="event-section" data-date="vendredi" data-scene="recital">
+                <h3 class="wrapper__prog--subtitle">Vendredi 29 août 2026 - 17h00 : Scène récital</h3>
+                <p class="wrapper__prog">
                     Récital de Musique de Chambre : quatre quatuors à cordes de Schönberg
+                </p>
+            </div>
 
-                    20h30 : Scène principale
-
+            <!-- Vendredi 20h30 - Scène principale -->
+            <div class="event-section" data-date="vendredi" data-scene="principale">
+                <h3 class="wrapper__prog--subtitle">Vendredi 29 août 2026 - 20h30 : Scène principale</h3>
+                <p class="wrapper__prog">
                     Concert Lyrique : Nathalie Dessay, chanteuse
                 </p>
                 <img class="wrapper__img" src="/assets/img/prog/prog-vend.webp" alt="Nathalie Dessay" loading="lazy" />
             </div>
 
-            <div class="event-section" data-date="samedi" data-scenes="decouverte recital principale">
-                <h3 class="wrapper__prog--subtitle">Samedi 30 août 2026 : Le grand rendez-vous</h3>
+            <!-- Samedi 15h00 - Espace découverte -->
+            <div class="event-section" data-date="samedi" data-scene="decouverte">
+                <h3 class="wrapper__prog--subtitle">Samedi 30 août 2026 - 15h00 : Espace découverte</h3>
                 <p class="wrapper__prog">
-                    Le grand rendez-vous
-
-                    15h00 : Espace découverte
-
                     Atelier Famille : Découverte des instruments classiques
+                </p>
+            </div>
 
-                    17h00 : Scène récital
-
+            <!-- Samedi 17h00 - Scène récital -->
+            <div class="event-section" data-date="samedi" data-scene="recital">
+                <h3 class="wrapper__prog--subtitle">Samedi 30 août 2026 - 17h00 : Scène récital</h3>
+                <p class="wrapper__prog">
                     Récital Soliste : Léon Phal, saxophoniste
+                </p>
+            </div>
 
-                    20h30 : Scène principale
-
+            <!-- Samedi 20h30 - Scène principale -->
+            <div class="event-section" data-date="samedi" data-scene="principale">
+                <h3 class="wrapper__prog--subtitle">Samedi 30 août 2026 - 20h30 : Scène principale</h3>
+                <p class="wrapper__prog">
                     Concert Symphonique : Le Consort, Ensemble
                 </p>
                 <img class="wrapper__img" src="/assets/img/prog/prog-sam.webp" alt="homme jouant du saxophone"
                     loading="lazy" />
             </div>
 
-            <div class="event-section" data-date="dimanche" data-scenes="decouverte recital principale">
-                <h3 class="wrapper__prog--subtitle">Dimanche 31 2026: Clôture en symphonie</h3>
+            <!-- Dimanche 15h00 - Espace découverte -->
+            <div class="event-section" data-date="dimanche" data-scene="decouverte">
+                <h3 class="wrapper__prog--subtitle">Dimanche 31 août 2026 - 15h00 : Espace découverte</h3>
                 <p class="wrapper__prog">
-                    15h00 : Espace découverte
-
                     Grande Chorale Participative : Répétition Finale
+                </p>
+            </div>
 
-                    17h00 : Scène récital
-
+            <!-- Dimanche 17h00 - Scène récital -->
+            <div class="event-section" data-date="dimanche" data-scene="recital">
+                <h3 class="wrapper__prog--subtitle">Dimanche 31 août 2026 - 17h00 : Scène récital</h3>
+                <p class="wrapper__prog">
                     Récital Jeune Soliste : Arielle, violoniste
+                </p>
+            </div>
 
-                    20h30 : Scène principale
-
-                    Concert de Clôture : Orchestre de l'Opéra
-                    de Toulon
+            <!-- Dimanche 20h30 - Scène principale -->
+            <div class="event-section" data-date="dimanche" data-scene="principale">
+                <h3 class="wrapper__prog--subtitle">Dimanche 31 août 2026 - 20h30 : Scène principale</h3>
+                <p class="wrapper__prog">
+                    Concert de Clôture : Orchestre de l'Opéra de Toulon
                 </p>
                 <img class="wrapper__img" src="/assets/img/prog/prog-dim.webp" alt="petite fille jouant du violon"
                     loading="lazy" />
