@@ -24,3 +24,26 @@
     --spc-mid: 7.25rem;
     --spc-lg: 12.5rem;
 }
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--v-dark);
+    color: var(--light-v);
+    line-height: 1.4;
+}
+
+.u-list-unstyled {
+    list-style: none;
+}

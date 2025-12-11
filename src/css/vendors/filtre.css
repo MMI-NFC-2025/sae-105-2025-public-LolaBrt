@@ -1,5 +1,5 @@
 .filters {
-    background: #f5f5f5;
+    background: none;
     padding: 2rem;
     margin: 2rem auto;
     max-width: 1200px;
@@ -25,20 +25,20 @@
 .filter-btn {
     padding: 0.5rem 1rem;
     border: 2px solid #333;
-    background: white;
+    background: var(--light-v);
     cursor: pointer;
     transition: all 0.3s;
     font-size: 0.9rem;
 }
 
 .filter-btn:hover {
-    background: #333;
-    color: white;
+    background: var(--vi);
+    color: var(--light-v);
 }
 
 .filter-btn.active {
-    background: #333;
-    color: white;
+    background: var(--vi);
+    color: var(--light-v);
 }
 
 .event-section {

@@ -1,0 +1,26 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Scroll fluide pour les ancres */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--v-dark);
+    color: var(--light-v);
+    line-height: 1.4;
+}
+
+a {
+    color: var(--vi);
+}
+
+a:hover {
+    border-bottom-color: var(--yellow);
+}
