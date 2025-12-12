@@ -16,3 +16,10 @@
     border-top: 1px solid var(--dark);
     text-decoration: none;
 }
+
+.footer__link--rs {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: var(--yellow);
+}
