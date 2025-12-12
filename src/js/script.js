@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Fermer le menu quand on clique sur un lien
     menuLinks.forEach(link => {
         link.addEventListener('click', function () {
             menu.classList.remove('is-active');
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Fermer le menu si on clique sur le fond
     if (menu) {
         menu.addEventListener('click', function (e) {
             if (e.target === menu) {
@@ -40,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Fermer le menu avec la touche Escape
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && menu.classList.contains('is-active')) {
             menu.classList.remove('is-active');
@@ -50,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*filtre*/
 document.addEventListener('DOMContentLoaded', function () {
     let selectedDate = 'all';
     let selectedScene = 'all';
@@ -94,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*carousel*/
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.carousel');
 
@@ -128,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function () {
     nextBtn.addEventListener('click', goToNext);
     prevBtn.addEventListener('click', goToPrev);
 
-    // Navigation au clavier
     document.addEventListener('keydown', function (e) {
         if (e.key === 'ArrowLeft') {
             goToPrev();

@@ -10,7 +10,6 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 
-/*composants*/
 @import "components/carousel.css";
 @import "components/home-hero.css";
 @import "components/hero.css";
