@@ -39,6 +39,10 @@ h3 {
     padding-bottom: var(--space-s);
 }
 
+h1 {
+    line-height: 4,25rem;
+}
+
 .partenaires-intro {
     display: flex;
     align-items: center;
