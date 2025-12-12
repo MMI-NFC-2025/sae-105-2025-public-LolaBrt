@@ -35,8 +35,8 @@ a:hover {
 }
 
 h3 {
-    padding-top: var(--space-sm);
-    padding-bottom: var(--space-sm);
+    padding-top: var(--space-s);
+    padding-bottom: var(--space-s);
 }
 
 .partenaires-intro {

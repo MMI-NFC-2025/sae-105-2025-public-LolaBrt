@@ -93,3 +93,47 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+/*carousel*/
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.carousel');
+
+    if (!carousel) return;
+
+    const slides = carousel.querySelector('.carousel__slides');
+    const prevBtn = carousel.querySelector('.carousel__btn--prev');
+    const nextBtn = carousel.querySelector('.carousel__btn--next');
+    const slideElements = carousel.querySelectorAll('.carousel__slide');
+
+    if (!slides || !prevBtn || !nextBtn || slideElements.length === 0) return;
+
+    let currentIndex = 0;
+    const totalSlides = slideElements.length;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function goToNext() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function goToPrev() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    nextBtn.addEventListener('click', goToNext);
+    prevBtn.addEventListener('click', goToPrev);
+
+    // Navigation au clavier
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') {
+            goToPrev();
+        } else if (e.key === 'ArrowRight') {
+            goToNext();
+        }
+    });
+});

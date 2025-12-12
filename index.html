@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta 
-        name= "description"
-        content= "Chorus Symphony: festival de musique classique à la Citadelle de Besançon, France. Découvrez des performances envoûtantes, des artistes renommés et une ambiance unique au cœur de l'histoire."
-    />
+    <meta name="description"
+        content="Chorus Symphony: festival de musique classique à la Citadelle de Besançon, France. Découvrez des performances envoûtantes, des artistes renommés et une ambiance unique au cœur de l'histoire." />
     <title>Page d'accueil</title>
 
-    <link rel="icon" type="image/png" href="/assets/icons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/icons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="/assets/icons/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Chorus Symphonia" />
+    <link rel="manifest" href="assets/icons/site.webmanifest" />
 
     <link href="https://fonts.googleapis.com/css2?family=Mohave:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
-   
+
 </head>
+
 <body>
     <header class="header">
         <a class="header__link" href="/">
-            <img
-                class="header__logo"
-                src="/assets/icons/logoblanc-021.svg"
-                alt="Logo du site Chorus Symphony" />
+            <img class="header__logo" src="/assets/icons/logoblanc-021.svg" alt="Logo du site Chorus Symphony" />
         </a>
 
-        <button
-            class="header__menu-btn menu-btn"
-            aria-label="menu"
-            aria-expanded="false"
-            aria-controls="mainNav">
-            <span
-                class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" 
-                aria-hidden="true"></span>
-             <span
-                class="menu-btn__bar menu-btn__bar--light menu-btn__bar--mid"
-                aria-hidden="true"></span>
-            <span 
-                class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" 
-                aria-hidden="true"></span>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--mid" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" aria-hidden="true"></span>
         </button>
-        <nav class="header__menu menu" id="mainNav" >
+        <nav class="header__menu menu" id="mainNav">
             <ul class="menu__list u-list-unstyled">
                 <li class="menu__item">
                     <a class="menu__link" href="/programme.html">Programme</a>
@@ -66,10 +53,7 @@
 
     <main>
         <div id="hero" class="home__hero">
-            <img
-                class="home__hero--logo"
-                src="/assets/icons/logoblanc-021.svg"
-                alt="Logo du site Chorus Symphony" />
+            <img class="home__hero--logo" src="/assets/icons/logoblanc-021.svg" alt="Logo du site Chorus Symphony" />
             <p class="hero__dates">28-31 août 2026</p>
         </div>
 
@@ -78,73 +62,49 @@
         </section>
 
         <section class="CTA">
-            <img class="ornement"
-                src="/assets/icons/s-star.svg"
-                alt="" />
+            <img class="ornement" src="/assets/icons/s-star.svg" alt="" />
             <a href="https://youtu.be/xvFZjo5PgG0?si=-efEmiaGulxBkw8G">
-                <button 
-                class="CTA__btn CTA__btn--billetterie"
-                aria-label="Accéder à la billetterie">Je prends mon billet !
-                </button> 
+                <button class="CTA__btn CTA__btn--billetterie" aria-label="Accéder à la billetterie">Je prends mon
+                    billet !
+                </button>
             </a>
-            <img class="ornement"
-                src="/assets/icons/s-star.svg"
-                alt="" />
+            <img class="ornement" src="/assets/icons/s-star.svg" alt="" />
         </section>
 
         <section class="list__cards">
-           <li class="cards-nav">
-            <img
-                class="cards-nav__img"
-                src="/assets/img/home/card-programme.webp"
-                alt="photo de piano"
-                loading="lazy" />
-            <a class="cards-nav__desc"
-                href="/programme.html">> Programme
-            </a>
-           </li>
-
             <li class="cards-nav">
-                <img class="cards-nav__img" 
-                src="/assets/img/home/card-artistes.webp" 
-                alt="photo d'une femme jouant de la harpe" 
-                loading="lazy" />
-                <a class="cards-nav__desc" 
-                href="/artistes.html">> Artistes
+                <img class="cards-nav__img" src="/assets/img/home/card-programme.webp" alt="photo de piano"
+                    loading="lazy" />
+                <a class="cards-nav__desc" href="/programme.html">> Programme
                 </a>
             </li>
 
             <li class="cards-nav">
-                <img 
-                class="cards-nav__img" 
-                src="/assets/img/home/card-informations.webp" 
-                alt="vue de nuit de la citadelle de Besançon" 
-                loading="lazy" />
-                <a class="cards-nav__desc" 
-                href="/infos.html">> Informations
+                <img class="cards-nav__img" src="/assets/img/home/card-artistes.webp"
+                    alt="photo d'une femme jouant de la harpe" loading="lazy" />
+                <a class="cards-nav__desc" href="/artistes.html">> Artistes
+                </a>
+            </li>
+
+            <li class="cards-nav">
+                <img class="cards-nav__img" src="/assets/img/home/card-informations.webp"
+                    alt="vue de nuit de la citadelle de Besançon" loading="lazy" />
+                <a class="cards-nav__desc" href="/infos.html">> Informations
                 </a>
             </li>
         </section>
 
         <section class="section--partenaires">
-           
-            <h3 
-                class="partenaires-intro">
+
+            <h3 class="partenaires-intro">
                 <img class="ornement" src="/assets/icons/s-star.svg" />
                 Ils nous soutiennent
             </h3>
             <div class="partenaires-logos">
-                <img 
-                    class="partenaires-logos__logo"
-                    src="/assets/img/logocitadelle1.webp"
+                <img class="partenaires-logos__logo" src="/assets/img/logocitadelle1.webp"
                     alt="Logo de la citadelle de Besançon" />
-                <img 
-                    class="partenaires-logos__logo"
-                    src="/assets/img/artelogo1.webp"
-                    alt="Logo de Arte" />
-                <img 
-                    class="partenaires-logos__logo"
-                    src="/assets/img/estrepublicainlogo1.webp"
+                <img class="partenaires-logos__logo" src="/assets/img/artelogo1.webp" alt="Logo de Arte" />
+                <img class="partenaires-logos__logo" src="/assets/img/estrepublicainlogo1.webp"
                     alt="Logo de l'Est Republicain" />
             </div>
         </section>
@@ -192,4 +152,5 @@
         <img src="/assets/icons/ancre.svg" alt="Retour en haut" width="24" height="auto">
     </a>
 </body>
+
 </html>
