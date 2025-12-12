@@ -32,7 +32,7 @@
 }
 
 .hero__dates {
-    margin-top: 0 rem;
+    margin-top: -1 rem;
     font-size: var(--font-size-h2);
     width: 80%;
     max-width: 600px;
