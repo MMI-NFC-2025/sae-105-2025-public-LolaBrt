@@ -33,6 +33,26 @@
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* Hero Large - pour pages détails */
+.hero--large {
+    height: auto;
+    min-height: 640px;
+}
+
+.hero--large .hero__image {
+    position: relative;
+    height: 640px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero--large .hero__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
@@ -42,5 +62,13 @@
 
     .hero__title {
         font-size: 2.5rem;
+    }
+
+    .hero--large {
+        min-height: 400px;
+    }
+
+    .hero--large .hero__image {
+        height: 400px;
     }
 }
