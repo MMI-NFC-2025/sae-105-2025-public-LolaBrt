@@ -1,3 +1,45 @@
+.list__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    list-style: none;
+}
+
+.cards-nav {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-nav__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border: 1px solid var(--light-v);
+}
+
+.cards-nav__desc {
+    position: relative;
+    display: inline-block;
+    align-self: flex-end;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--v-dark);
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.125rem;
+    border: 1px solid var(--light-v);
+    margin-top: -2rem;
+    margin-right: -1rem;
+    z-index: 1;
+}
+
+.cards-nav__desc:hover {
+    background-color: var(--dark);
+}
+
 .partenaires-logos {
     display: flex;
     flex-direction: column;

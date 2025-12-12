@@ -6,6 +6,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: calc(-1 * var(--spc-margin));
+    margin-right: calc(-1 * var(--spc-margin));
 }
 
 .footer__link {
@@ -25,7 +27,8 @@
     align-items: center;
     gap: 1.5rem;
 }
-.footer__link--rs{
+
+.footer__link--rs {
     color: var(--yellow);
     text-decoration: none;
     padding-top: var(--spc-s);

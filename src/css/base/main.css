@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -17,10 +16,10 @@ body {
     background-color: var(--v-dark);
     color: var(--light-v);
     line-height: 1.4;
-    padding-right: var(--spc-margin);
-    padding-left: var(--spc-margin);
     margin: 0;
     padding: 0;
+    padding-right: var(--spc-margin);
+    padding-left: var(--spc-margin);
     width: 100%;
     max-width: 100vw;
     overflow-x: hidden;
@@ -35,15 +34,15 @@ a:hover {
     border-bottom-color: var(--yellow);
 }
 
-h3 { 
+h3 {
     padding-top: var(--space-sm);
     padding-bottom: var(--space-sm);
 }
 
 .partenaires-intro {
-   display: flex;
-   align-items: center;
-   gap: var(--spc-s);
+    display: flex;
+    align-items: center;
+    gap: var(--spc-s);
 }
 
 button,

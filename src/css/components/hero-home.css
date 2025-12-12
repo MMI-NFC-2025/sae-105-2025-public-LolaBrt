@@ -1,20 +1,27 @@
 .home__hero {
-    background-image: url(/assets/img/home/accueil-hero.webp);
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+        url(/assets/img/home/accueil-hero.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     min-height: 100vh;
     position: relative;
-    min-height: 100vh;
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(-1 * var(--spc-margin));
+    padding-left: var(--spc-margin);
+    padding-right: var(--spc-margin);
+    padding-bottom: 3rem;
+    box-sizing: border-box;
 }
 
 .home__hero--image {
     display: none;
+    bottom: 20%
 }
 
 .home__hero--logo {
@@ -25,5 +32,9 @@
 }
 
 .hero__dates {
-    margin-top: 1rem;
+    margin-top: -2rem;
+    font-size: var(--font-size-h2);
+    width: 80%;
+    max-width: 600px;
+    text-align: right;
 }
