@@ -2,11 +2,13 @@
     background-color: var(--dark);
     padding-top: var(--spc-ss);
     padding-bottom: var(--spc-ss);
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer__link {
-    position: center;
     color: var(--light-v);
     display: flex;
     justify-content: center;
@@ -17,9 +19,19 @@
     text-decoration: none;
 }
 
-.footer__link--rs {
-    display: flex; 
+.footer__list--rs {
+    display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
+}
+.footer__link--rs{
     color: var(--yellow);
+    text-decoration: none;
+    padding-top: var(--spc-s);
+}
+
+.footer__logo {
+    height: 150px;
+    width: auto;
 }
