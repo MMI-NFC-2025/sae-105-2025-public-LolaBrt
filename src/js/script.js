@@ -1,37 +1,51 @@
-const toggle = document.querySelector(".menu-btn");
-const nav = document.querySelector(".menu");
-const logo = document.querySelector(".header__logo");
-const page = document.body;
-
-// Vérifier si les éléments existent avant d'ajouter l'événement
-if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-        const isOpen = toggle.ariaExpanded === "true";
-        const isClosed = !isOpen;
-
-        // Mise à jour des attributs ARIA pour accessibilité
-        toggle.ariaExpanded = isClosed;
-        nav.hidden = isOpen;
-        logo.classList.toggle("header__logo--extend", isClosed);
-        page.classList.toggle("u-noscroll", isClosed);
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     const menuBtn = document.querySelector('.menu-btn');
-    const menu = document.querySelector('.header__menu');
+    const menu = document.querySelector('.menu');
+    const menuLinks = document.querySelectorAll('.menu__link');
+    const body = document.body;
 
-    menuBtn.addEventListener('click', function () {
-        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    if (menuBtn && menu) {
+        menuBtn.addEventListener('click', function () {
+            const isOpen = menu.classList.contains('is-active');
 
-        this.setAttribute('aria-expanded', !isExpanded);
+            if (isOpen) {
+                menu.classList.remove('is-active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                body.classList.remove('u-noscroll');
+            } else {
+                menu.classList.add('is-active');
+                menuBtn.setAttribute('aria-expanded', 'true');
+                body.classList.add('u-noscroll');
+            }
+        });
+    }
 
-        if (!isExpanded) {
-            menu.removeAttribute('hidden');
-            document.body.style.overflow = 'hidden'; // Empêche le scroll
-        } else {
-            menu.setAttribute('hidden', '');
-            document.body.style.overflow = ''; // Réactive le scroll
+    // Fermer le menu quand on clique sur un lien
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            menu.classList.remove('is-active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            body.classList.remove('u-noscroll');
+        });
+    });
+
+    // Fermer le menu si on clique sur le fond
+    if (menu) {
+        menu.addEventListener('click', function (e) {
+            if (e.target === menu) {
+                menu.classList.remove('is-active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                body.classList.remove('u-noscroll');
+            }
+        });
+    }
+
+    // Fermer le menu avec la touche Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.classList.contains('is-active')) {
+            menu.classList.remove('is-active');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            body.classList.remove('u-noscroll');
         }
     });
 });

@@ -11,6 +11,8 @@
     overflow: visible;
     display: flex;
     flex-direction: column;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .cards-nav__img {
@@ -38,6 +40,17 @@
 
 .cards-nav__desc:hover {
     background-color: var(--dark);
+}
+
+.wrapper__img {
+    width: 100vw;
+    height: auto;
+    border-top: 1px solid var(--light-v);
+    border-bottom: 1px solid var(--light-v);
+    margin: 2rem 0;
+    margin-left: calc(-1 * var(--spc-margin));
+    display: block;
+    box-sizing: border-box;
 }
 
 .partenaires-logos {

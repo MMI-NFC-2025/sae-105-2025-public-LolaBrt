@@ -12,12 +12,11 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    z-index: 9999;
+    z-index: 100;
 }
 
 .header__link,
-.header__logo,
-.menu-btn {
+.header__logo {
     max-width: 100%;
 }
 
@@ -31,6 +30,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 .menu-btn[aria-expanded="true"] {

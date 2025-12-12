@@ -1,53 +1,49 @@
-
+/* Bouton du menu */
 .menu-btn {
-    appearance: none;
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
     position: relative;
-    width: 35px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 10001;
     flex-shrink: 0;
-    padding: 0;
 }
 
 .menu-btn__bar {
-    background-color: var(--light-v);
-    height: 2px;
-    width: 35px;
+    background: var(--light-v);
+    height: 3px;
+    width: 100%;
     position: absolute;
+    border-radius: 2px;
     left: 0;
-    transition: all 0.3s ease;
-    display: block;
+    transition: all 0.2s ease-in-out;
 }
 
 .menu-btn__bar--top {
-    top: 0;
+    bottom: 8px;
 }
 
 .menu-btn__bar--mid {
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .menu-btn__bar--bottom {
-    bottom: 0;
+    top: 8px;
 }
 
-@media (min-width: 768px) {
-    .header {
-        padding: 1rem 35px;
-    }
+.menu-btn__bar--light {
+    background: var(--light-v);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--top {
-    transform-origin: center;
-    transform: rotate(45deg);
-    top: 11px;
-    background-color: var(--light-v)
+    transform-origin: 14px -2px;
+    transform: rotate(-135deg);
+    background: var(--dark);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--mid {
@@ -56,9 +52,149 @@
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
-    transform-origin: center;
+    transform-origin: 22px 4px;
     transform: rotate(-45deg);
-    bottom: 11px;
-    background-color: var(--light-v)
+    background: var(--dark);
 }
 
+/* Menu Overlay */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--light-v) 0%, var(--vi) 80%, var(--v-dark) 100%);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.menu.is-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.menu__item {
+    width: 100%;
+    border-bottom: 1px solid var(--dark);
+}
+
+.menu__link {
+    font-size: 1.5rem;
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--dark);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu__link:hover {
+    transform: translateY(-2px);
+}
+
+.menu__link:hover::after {
+    width: 60%;
+    left: 20%;
+}
+
+.menu.is-active .menu__link {
+    animation: slideInFromLeft 0.5s ease forwards;
+    opacity: 0;
+}
+
+.menu.is-active .menu__item:nth-child(1) .menu__link {
+    animation-delay: 0.1s;
+}
+
+.menu.is-active .menu__item:nth-child(2) .menu__link {
+    animation-delay: 0.15s;
+}
+
+.menu.is-active .menu__item:nth-child(3) .menu__link {
+    animation-delay: 0.2s;
+}
+
+.menu.is-active .menu__item:nth-child(4) .menu__link {
+    animation-delay: 0.25s;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.u-list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.u-noscroll {
+    overflow: hidden;
+}
+
+/* Responsive spacing */
+@media (max-height: 700px) {
+    .menu__list {
+        gap: 1rem;
+    }
+
+    .menu__link {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .menu__list {
+        gap: 0.5rem;
+    }
+
+    .menu__link {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 1rem 35px;
+    }
+}
