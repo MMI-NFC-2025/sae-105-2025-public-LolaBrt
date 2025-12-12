@@ -17,6 +17,25 @@ if (toggle && nav) {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.header__menu');
+
+    menuBtn.addEventListener('click', function () {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+        this.setAttribute('aria-expanded', !isExpanded);
+
+        if (!isExpanded) {
+            menu.removeAttribute('hidden');
+            document.body.style.overflow = 'hidden'; // Empêche le scroll
+        } else {
+            menu.setAttribute('hidden', '');
+            document.body.style.overflow = ''; // Réactive le scroll
+        }
+    });
+});
+
 /*filtre*/
 document.addEventListener('DOMContentLoaded', function () {
     let selectedDate = 'all';

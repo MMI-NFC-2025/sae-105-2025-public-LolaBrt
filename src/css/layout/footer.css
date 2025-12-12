@@ -1,3 +1,18 @@
 .footer {
-    background-color: var(--dark)
+    background-color: var(--dark);
+    padding-top: var(--spc-ss);
+    padding-bottom: var(--spc-ss);
+    
+}
+
+.footer__link {
+    position: center;
+    color: var(--light-v);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--spc-ss);
+    padding-bottom: var(--spc-ss);
+    border-top: 1px solid var(--dark);
+    text-decoration: none;
 }

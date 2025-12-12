@@ -33,3 +33,22 @@
     cursor: pointer;
 }
 
+.menu-btn[aria-expanded="true"] {
+    .menu-btn__bar--top {
+        transform-origin: 14px -2px;
+        transform: rotate(-135deg);
+        background: var(--light);
+    }
+
+    .menu-btn[aria-expanded="true"] 
+        .menu-btn__bar--mid {
+    opacity: 0;
+    transform: scaleX(0);
+    }
+
+    .menu-btn__bar--bottom {
+        transform-origin: 22px 4px;
+        transform: rotate(-45deg);
+        background: var(--light);
+    }
+}
