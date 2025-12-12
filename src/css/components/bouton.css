@@ -1,0 +1,12 @@
+.CTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spc-ss);
+    margin: var(--space-sm) 0;
+}
+
+.CTA__btn {
+    background-color: var(--yellow);
+    padding: var(--spc-s) var(--spc-ss);
+}

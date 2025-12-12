@@ -23,7 +23,7 @@
    
 </head>
 <body>
-    <header id="header" class="header">
+    <header class="header">
         <a class="header__link" href="/">
             <img
                 class="header__logo"
@@ -60,19 +60,12 @@
                 <li class="menu__item">
                     <a class="menu__link" href="/infos.html">Informations pratiques</a>
                 </li>
-                <li class="footer__item">
-                    <a class="footer__link" href="/about.html">À propos</a>
-                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="home__hero">
-            <img
-                class="home__hero--image"
-                src="/assets/img/home/accueil-hero.webp"
-                alt="ciel étoilé" />
+        <div id="hero" class="home__hero">
             <img
                 class="home__hero--logo"
                 src="/assets/icons/logoblanc-021.svg"
@@ -85,8 +78,8 @@
         </section>
 
         <section class="CTA">
-            <img
-                href="/assets/icons/s-star.svg"
+            <img class="ornement"
+                src="/assets/icons/s-star.svg"
                 alt="" />
             <a href="https://youtu.be/xvFZjo5PgG0?si=-efEmiaGulxBkw8G">
                 <button 
@@ -94,8 +87,8 @@
                 aria-label="Accéder à la billetterie">Je prends mon billet !
                 </button> 
             </a>
-            <img 
-                href="/assets/icons/s-star.svg"
+            <img class="ornement"
+                src="/assets/icons/s-star.svg"
                 alt="" />
         </section>
 
@@ -134,9 +127,12 @@
         </section>
 
         <section class="section--partenaires">
-            <img class="ornement"
-                href="/assets/icons/s-star.svg"/>
-            <p class="partenaires-intro">Ils nous soutiennent</p>
+           
+            <h3 
+                class="partenaires-intro">
+                <img class="ornement" src="/assets/icons/s-star.svg" />
+                Ils nous soutiennent
+            </h3>
             <div class="partenaires-logos">
                 <img 
                     class="partenaires-logos__logo"
@@ -170,32 +166,29 @@
                     <a class="footer__link" href="/contact.html">Contact</a>
                 </li>
             </ul>
-            <ul class="u-list-unstyled footer__list">
+            <ul class="u-list-unstyled footer__list--rs">
                 <li class="footer__item">
-                    <a class="footer__link" href="https://www.instagram.com/lola.nov.art/">Instagram</a>
+                    <a class="footer__link--rs" href="https://www.instagram.com/lola.nov.art/">Instagram</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="https://www.facebook.com/Lola.Nov.Art?locale=fr_FR">Facebook</a>
+                    <a class="footer__link--rs" href="https://www.facebook.com/Lola.Nov.Art?locale=fr_FR">Facebook</a>
                 </li>
                 <li class="footer__item">
-                    <a class="footer__link" href="https://lolanovart.myportfolio.com/">Podcasts</a>
+                    <a class="footer__link--rs" href="https://lolanovart.myportfolio.com/">Podcasts</a>
                 </li>
             </ul>
         </nav>
-        <img
-            class="footer__logo"
-            src="/assets/icons/logoblanc-021.svg"
-            alt="Logo du site Chorus Symphony" />
+        <img class="footer__logo" src="/assets/icons/logoblanc-021.svg" alt="Logo du site Chorus Symphony" />
         <p class="footer__mentions">
             Lola Brouart
         </p>
-        <p class="disclaimer">  
-            Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au 
+        <p class="disclaimer">
+            Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au
             <a href="https://mmi.univ-fcomte.fr/">département MMi de Montbéliard</a>.
         </p>
     </footer>
 
-    <a href="#header" class="ancre">
+    <a href="#hero" class="ancre">
         <img src="/assets/icons/ancre.svg" alt="Retour en haut" width="24" height="auto">
     </a>
 </body>
